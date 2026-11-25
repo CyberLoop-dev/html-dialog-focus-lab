@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HTML Dialog Focus Lab</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="wrap"><header><span class="tag">NATIVE BROWSER API</span><h1>Dialogs & focus.</h1><p>Open a dialog in two different modes and watch its lifecycle.</p></header>
+<section class="panel"><div class="actions"><button id="modal">Open modal dialog</button><button id="nonmodal" class="secondary">Open non-modal dialog</button></div><p id="status" aria-live="polite">Ready. Choose an opening mode.</p><h2>Event log</h2><ol id="log" aria-live="polite"></ol></section>
+<dialog id="demo"><form method="dialog"><span class="tag">DIALOG CONTENT</span><h2>Native dialog element</h2><p>The browser manages modal focus and Escape behavior for showModal().</p><label for="answer">Return value</label><input id="answer" name="answer" value="confirmed"><div class="actions"><button value="saved">Close with value</button><button value="cancelled" class="secondary">Cancel</button></div></form></dialog>
+<script type="module" src="/app.js"></script></main></body></html>
